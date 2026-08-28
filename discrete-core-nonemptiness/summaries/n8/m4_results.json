@@ -1,0 +1,33 @@
+{
+  "adaptive_certificates": 0,
+  "failure_records": 0,
+  "feasible_nonroundable_cells": 22,
+  "files": {
+    "cps4_all.bin": {
+      "bytes": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "cps4_fail.bin": {
+      "bytes": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "n8m4_all.bin": {
+      "bytes": 40488,
+      "sha256": "bd83ab182a7f04a691dfc9a36d065b78befc70d9c0d9e1e9d68d7816a0d5c1b2"
+    },
+    "n8m4_hard.bin": {
+      "bytes": 16,
+      "sha256": "c15ebbd1a367605c5c9dce8f37856c01be551877a0bfb750b3f8102dcddc6c30"
+    },
+    "n8m4_pos.bin": {
+      "bytes": 38240,
+      "sha256": "17b33ee4d1e262b016e4b1cedcfe9cf58f616dbf84398a3517149e6e273a3e85"
+    }
+  },
+  "fixed_certificates": 0,
+  "fractional_columns": 4,
+  "full_rank_antichain_orbits": 5060,
+  "hard_cells": 0,
+  "matrix_budget_cases": 4779,
+  "positive_dual_kernels": 4779
+}

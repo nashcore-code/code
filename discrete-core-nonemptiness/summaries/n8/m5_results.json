@@ -1,0 +1,41 @@
+{
+  "adaptive_certificates": 0,
+  "failure_records": 0,
+  "feasible_nonroundable_cells": 84,
+  "files": {
+    "cps5_all.bin": {
+      "bytes": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "cps5_fail.bin": {
+      "bytes": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "n8m5_all_direct.bin": {
+      "bytes": 558520,
+      "sha256": "6cc5dc2a19bedd8b7213db0348d34636de673731150eb232ffa14e2f84a28f82"
+    },
+    "n8m5_hard.bin": {
+      "bytes": 16,
+      "sha256": "c15ebbd1a367605c5c9dce8f37856c01be551877a0bfb750b3f8102dcddc6c30"
+    },
+    "n8m5_pos.bin": {
+      "bytes": 451840,
+      "sha256": "0d1bc7a3b70d099de89d8a851fc77d77af2dbe202f7669697b555cb7e18c3e69"
+    },
+    "n8m5_pos_augmented.bin": {
+      "bytes": 451840,
+      "sha256": "0d1bc7a3b70d099de89d8a851fc77d77af2dbe202f7669697b555cb7e18c3e69"
+    },
+    "n8m5_pos_direct.bin": {
+      "bytes": 451840,
+      "sha256": "0d1bc7a3b70d099de89d8a851fc77d77af2dbe202f7669697b555cb7e18c3e69"
+    }
+  },
+  "fixed_certificates": 0,
+  "fractional_columns": 5,
+  "full_rank_antichain_orbits": 69814,
+  "hard_cells": 0,
+  "matrix_budget_cases": 112958,
+  "positive_dual_kernels": 56479
+}

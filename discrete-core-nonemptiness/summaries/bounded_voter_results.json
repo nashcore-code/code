@@ -1,0 +1,23 @@
+{
+  "artifact_version": "1.0.0-proof-complete",
+  "modules": {
+    "n6": "n6_results.json",
+    "n7": "n7_results.json",
+    "n8": "n8/eight_voter_results.json"
+  },
+  "paper_included": false,
+  "release_status": {
+    "n6": "populated",
+    "n7": "populated",
+    "n8_code": "complete end-to-end m=4,...,8 regeneration and exact-replay driver",
+    "n8_m4_m5": "populated with canonical data, zero-hard-cell outputs, logs, and summaries",
+    "n8_m4_m7_validation": "resumable end-to-end regeneration through m=7 passed; regenerated m=7 proposal/replay has 36119 fixed, 9 adaptive, and zero failures",
+    "n8_m6_m7": "populated from compact predecessor records and exactly replayable",
+    "n8_m8_adaptive_smoke": "nine kernels, 48 hard records, production chunk merges, 38 fixed and 10 adaptive certificates, and both exact backends reproducible from source",
+    "n8_m8_large_data": "present: 9,105,190-kernel list, 1,049,187 hard records, accepted certificates, and zero-failure stream",
+    "n8_release_state": "data-complete exact proof artifact; full m=8 kernel audit, hard-record coverage, and two-backend exact replay passed",
+    "n8_checker_hardening": "m=7 checker rejects rank-deficient and empty-strict-positive-dual kernels; both m=8 exact backends validate unique positive duals and structural metadata",
+    "n8_resume": "reused key, scan, proposal, and exact-replay artifacts require SHA-256 provenance binding exact tools, inputs, parameters, and outputs",
+    "n8_full_replay": "PASS in the 2026-08-07 completion run; the final release quick_verify transcript is stored in logs/n8/proof_complete_quick_verify.log"
+  }
+}

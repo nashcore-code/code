@@ -1,0 +1,7 @@
+EXACT COVERAGE CHECK FOR THE SIX-VOTER SUPPORT ENUMERATION
+
+Arithmetic: integer only; direct labeled enumeration versus orbit-size sum.
+m=4: labeled reduced antichains=9745, canonical representatives=40, sum of orbit sizes=9745
+m=5: labeled reduced antichains=129570, canonical representatives=305, sum of orbit sizes=129570
+m=6: labeled reduced antichains=444716, canonical representatives=853, sum of orbit sizes=444716
+RESULT: PASS.  The canonical representative list covers every labeled reduced support system.

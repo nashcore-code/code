@@ -1,0 +1,45 @@
+Verified SHA-256 for 179 files.
+PASS n=6 antichains=2153 cells=46 bad=0 surplus=0
+Verified 298 primitive holes and all 2,086 singleton puncture witnesses.
+PASS n=7 antichains=61846 cells=30929 surplus=298 bad=0
+PASS m=4,5 canonical counts and direct/augmentation agreement
+20/16840/16860/16880/168100/168120/168140/168160/168
+PASS m=7 deposited exact validity certs=36128 fixed=36119 adaptive=9
+PASS m=7 proposal coverage records=36128 fixed=36119 adaptive=9
+PASS m=7 regenerated exact validity certs=36128 fixed=36119 adaptive=9
+
+
+
+PASS n=8 available branches m4,m5,m6,m7 plus m8 adaptive exact smoke
+NOTE: cps8_all.bin differs from the audited proposal hash; exact validity will be checked (527d8237a2e4aaa79a5767fc5b6cfed8e9094f11e62f413e49a023dff683021b)
+1000000/91051902000000/91051903000000/91051904000000/91051905000000/91051906000000/91051907000000/91051908000000/91051909000000/9105190
+exact certificate partition: records=1049187 chunks=100 jobs=5
+ll exact replay chunks 1/100ll exact replay chunks 2/100ll exact replay chunks 3/100ll exact replay chunks 4/100ll exact replay chunks 5/100ll exact replay chunks 6/100ll exact replay chunks 7/100ll exact replay chunks 8/100ll exact replay chunks 9/100ll exact replay chunks 10/100ll exact replay chunks 11/100ll exact replay chunks 12/100ll exact replay chunks 13/100ll exact replay chunks 14/100ll exact replay chunks 15/100ll exact replay chunks 16/100ll exact replay chunks 17/100ll exact replay chunks 18/100ll exact replay chunks 19/100ll exact replay chunks 20/100ll exact replay chunks 21/100ll exact replay chunks 22/100ll exact replay chunks 23/100ll exact replay chunks 24/100ll exact replay chunks 25/100ll exact replay chunks 26/100ll exact replay chunks 27/100ll exact replay chunks 28/100ll exact replay chunks 29/100ll exact replay chunks 30/100ll exact replay chunks 31/100ll exact replay chunks 32/100ll exact replay chunks 33/100ll exact replay chunks 34/100ll exact replay chunks 35/100ll exact replay chunks 36/100ll exact replay chunks 37/100ll exact replay chunks 38/100ll exact replay chunks 39/100ll exact replay chunks 40/100ll exact replay chunks 41/100ll exact replay chunks 42/100ll exact replay chunks 43/100ll exact replay chunks 44/100ll exact replay chunks 45/100ll exact replay chunks 46/100ll exact replay chunks 47/100ll exact replay chunks 48/100ll exact replay chunks 49/100ll exact replay chunks 50/100ll exact replay chunks 51/100ll exact replay chunks 52/100ll exact replay chunks 53/100ll exact replay chunks 54/100ll exact replay chunks 55/100ll exact replay chunks 56/100ll exact replay chunks 57/100ll exact replay chunks 58/100ll exact replay chunks 59/100ll exact replay chunks 60/100ll exact replay chunks 61/100ll exact replay chunks 62/100ll exact replay chunks 63/100ll exact replay chunks 64/100ll exact replay chunks 65/100ll exact replay chunks 66/100ll exact replay chunks 67/100ll exact replay chunks 68/100ll exact replay chunks 69/100ll exact replay chunks 70/100ll exact replay chunks 71/100ll exact replay chunks 72/100ll exact replay chunks 73/100ll exact replay chunks 74/100ll exact replay chunks 75/100ll exact replay chunks 76/100ll exact replay chunks 77/100ll exact replay chunks 78/100ll exact replay chunks 79/100ll exact replay chunks 80/100ll exact replay chunks 81/100ll exact replay chunks 82/100ll exact replay chunks 83/100ll exact replay chunks 84/100ll exact replay chunks 85/100ll exact replay chunks 86/100ll exact replay chunks 87/100ll exact replay chunks 88/100ll exact replay chunks 89/100ll exact replay chunks 90/100ll exact replay chunks 91/100ll exact replay chunks 92/100ll exact replay chunks 93/100ll exact replay chunks 94/100ll exact replay chunks 95/100ll exact replay chunks 96/100ll exact replay chunks 97/100ll exact replay chunks 98/100ll exact replay chunks 99/100ll exact replay chunks 100/100
+gmp exact replay chunks 1/100gmp exact replay chunks 2/100gmp exact replay chunks 3/100gmp exact replay chunks 4/100gmp exact replay chunks 5/100gmp exact replay chunks 6/100gmp exact replay chunks 7/100gmp exact replay chunks 8/100gmp exact replay chunks 9/100gmp exact replay chunks 10/100gmp exact replay chunks 11/100gmp exact replay chunks 12/100gmp exact replay chunks 13/100gmp exact replay chunks 14/100gmp exact replay chunks 15/100gmp exact replay chunks 16/100gmp exact replay chunks 17/100gmp exact replay chunks 18/100gmp exact replay chunks 19/100gmp exact replay chunks 20/100gmp exact replay chunks 21/100gmp exact replay chunks 22/100gmp exact replay chunks 23/100gmp exact replay chunks 24/100gmp exact replay chunks 25/100gmp exact replay chunks 26/100gmp exact replay chunks 27/100gmp exact replay chunks 28/100gmp exact replay chunks 29/100gmp exact replay chunks 30/100gmp exact replay chunks 31/100gmp exact replay chunks 32/100gmp exact replay chunks 33/100gmp exact replay chunks 34/100gmp exact replay chunks 35/100gmp exact replay chunks 36/100gmp exact replay chunks 37/100gmp exact replay chunks 38/100gmp exact replay chunks 39/100gmp exact replay chunks 40/100gmp exact replay chunks 41/100gmp exact replay chunks 42/100gmp exact replay chunks 43/100gmp exact replay chunks 44/100gmp exact replay chunks 45/100gmp exact replay chunks 46/100gmp exact replay chunks 47/100gmp exact replay chunks 48/100gmp exact replay chunks 49/100gmp exact replay chunks 50/100gmp exact replay chunks 51/100gmp exact replay chunks 52/100gmp exact replay chunks 53/100gmp exact replay chunks 54/100gmp exact replay chunks 55/100gmp exact replay chunks 56/100gmp exact replay chunks 57/100gmp exact replay chunks 58/100gmp exact replay chunks 59/100gmp exact replay chunks 60/100gmp exact replay chunks 61/100gmp exact replay chunks 62/100gmp exact replay chunks 63/100gmp exact replay chunks 64/100gmp exact replay chunks 65/100gmp exact replay chunks 66/100gmp exact replay chunks 67/100gmp exact replay chunks 68/100gmp exact replay chunks 69/100gmp exact replay chunks 70/100gmp exact replay chunks 71/100gmp exact replay chunks 72/100gmp exact replay chunks 73/100gmp exact replay chunks 74/100gmp exact replay chunks 75/100gmp exact replay chunks 76/100gmp exact replay chunks 77/100gmp exact replay chunks 78/100gmp exact replay chunks 79/100gmp exact replay chunks 80/100gmp exact replay chunks 81/100gmp exact replay chunks 82/100gmp exact replay chunks 83/100gmp exact replay chunks 84/100gmp exact replay chunks 85/100gmp exact replay chunks 86/100gmp exact replay chunks 87/100gmp exact replay chunks 88/100gmp exact replay chunks 89/100gmp exact replay chunks 90/100gmp exact replay chunks 91/100gmp exact replay chunks 92/100gmp exact replay chunks 93/100gmp exact replay chunks 94/100gmp exact replay chunks 95/100gmp exact replay chunks 96/100gmp exact replay chunks 97/100gmp exact replay chunks 98/100gmp exact replay chunks 99/100gmp exact replay chunks 100/100
+PASS m=8 signed-rational/GMP chunked replays agree chunks=100 jobs=5
+PASS m=8 exact validity certs=1049187 fixed=1049177 adaptive=10 saturation_skips=122280434 open_floor_checks=6543104 exact_price_LPs=4430958 min_singleton_or_sum=1/1008 min_exact_price=1/11
+PASS n=8 m4,m5,m6,m7,m8 exact replay and record coverage
+PASS theorem_artifact=discrete-core-at-most-eight
+	Command being timed: "env REPLAY_JOBS=5 ./scripts/quick_verify.sh"
+	User time (seconds): 3665.17
+	System time (seconds): 6.36
+	Percent of CPU this job got: 260%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 23:31.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 642728
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2639241
+	Voluntary context switches: 2085
+	Involuntary context switches: 140142
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 164200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

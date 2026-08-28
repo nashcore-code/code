@@ -1,0 +1,635 @@
+{
+  "by_residual_budget": {
+    "2": {
+      "B_empty": 0,
+      "cases": 9105190,
+      "cell_feasible": 59523,
+      "floor_cover_rej": 1265844,
+      "min_cover_rej": 8689502,
+      "min_subset_rej": 1214784,
+      "normalized_min": 11283631,
+      "raw_min_holes": 11283631,
+      "subset_pass": 3674435,
+      "unresolved_by_tight": 59358,
+      "upper_floors": 3878271
+    },
+    "3": {
+      "B_empty": 0,
+      "cases": 9105190,
+      "cell_feasible": 262243,
+      "floor_cover_rej": 20528648,
+      "min_cover_rej": 98466361,
+      "min_subset_rej": 59429104,
+      "normalized_min": 164794607,
+      "raw_min_holes": 164794607,
+      "subset_pass": 37174935,
+      "unresolved_by_tight": 258574,
+      "upper_floors": 144351169
+    },
+    "4": {
+      "B_empty": 0,
+      "cases": 9105190,
+      "cell_feasible": 437888,
+      "floor_cover_rej": 41066893,
+      "min_cover_rej": 173490567,
+      "min_subset_rej": 119338819,
+      "normalized_min": 303745819,
+      "raw_min_holes": 303745819,
+      "subset_pass": 70262589,
+      "unresolved_by_tight": 413323,
+      "upper_floors": 443483363
+    },
+    "5": {
+      "B_empty": 0,
+      "cases": 9105190,
+      "cell_feasible": 262243,
+      "floor_cover_rej": 20528648,
+      "min_cover_rej": 98466361,
+      "min_subset_rej": 59429104,
+      "normalized_min": 164794607,
+      "raw_min_holes": 164794607,
+      "subset_pass": 37174935,
+      "unresolved_by_tight": 258574,
+      "upper_floors": 144351169
+    },
+    "6": {
+      "B_empty": 0,
+      "cases": 9105190,
+      "cell_feasible": 59523,
+      "floor_cover_rej": 1265844,
+      "min_cover_rej": 8689502,
+      "min_subset_rej": 1214784,
+      "normalized_min": 11283631,
+      "raw_min_holes": 11283631,
+      "subset_pass": 3674435,
+      "unresolved_by_tight": 59358,
+      "upper_floors": 3878271
+    }
+  },
+  "chunk_count": 92,
+  "chunks": [
+    {
+      "file": "chunk_0000000.bin",
+      "matrices": 100000,
+      "offset": 0,
+      "records": 910
+    },
+    {
+      "file": "chunk_0100000.bin",
+      "matrices": 100000,
+      "offset": 100000,
+      "records": 928
+    },
+    {
+      "file": "chunk_0200000.bin",
+      "matrices": 100000,
+      "offset": 200000,
+      "records": 796
+    },
+    {
+      "file": "chunk_0300000.bin",
+      "matrices": 100000,
+      "offset": 300000,
+      "records": 1349
+    },
+    {
+      "file": "chunk_0400000.bin",
+      "matrices": 100000,
+      "offset": 400000,
+      "records": 3585
+    },
+    {
+      "file": "chunk_0500000.bin",
+      "matrices": 100000,
+      "offset": 500000,
+      "records": 4027
+    },
+    {
+      "file": "chunk_0600000.bin",
+      "matrices": 100000,
+      "offset": 600000,
+      "records": 1725
+    },
+    {
+      "file": "chunk_0700000.bin",
+      "matrices": 100000,
+      "offset": 700000,
+      "records": 4629
+    },
+    {
+      "file": "chunk_0800000.bin",
+      "matrices": 100000,
+      "offset": 800000,
+      "records": 6776
+    },
+    {
+      "file": "chunk_0900000.bin",
+      "matrices": 100000,
+      "offset": 900000,
+      "records": 4104
+    },
+    {
+      "file": "chunk_1000000.bin",
+      "matrices": 100000,
+      "offset": 1000000,
+      "records": 6011
+    },
+    {
+      "file": "chunk_1100000.bin",
+      "matrices": 100000,
+      "offset": 1100000,
+      "records": 9110
+    },
+    {
+      "file": "chunk_1200000.bin",
+      "matrices": 100000,
+      "offset": 1200000,
+      "records": 6654
+    },
+    {
+      "file": "chunk_1300000.bin",
+      "matrices": 100000,
+      "offset": 1300000,
+      "records": 2735
+    },
+    {
+      "file": "chunk_1400000.bin",
+      "matrices": 100000,
+      "offset": 1400000,
+      "records": 7289
+    },
+    {
+      "file": "chunk_1500000.bin",
+      "matrices": 100000,
+      "offset": 1500000,
+      "records": 8526
+    },
+    {
+      "file": "chunk_1600000.bin",
+      "matrices": 100000,
+      "offset": 1600000,
+      "records": 7872
+    },
+    {
+      "file": "chunk_1700000.bin",
+      "matrices": 100000,
+      "offset": 1700000,
+      "records": 9027
+    },
+    {
+      "file": "chunk_1800000.bin",
+      "matrices": 100000,
+      "offset": 1800000,
+      "records": 8998
+    },
+    {
+      "file": "chunk_1900000.bin",
+      "matrices": 100000,
+      "offset": 1900000,
+      "records": 14295
+    },
+    {
+      "file": "chunk_2000000.bin",
+      "matrices": 100000,
+      "offset": 2000000,
+      "records": 5806
+    },
+    {
+      "file": "chunk_2100000.bin",
+      "matrices": 100000,
+      "offset": 2100000,
+      "records": 7853
+    },
+    {
+      "file": "chunk_2200000.bin",
+      "matrices": 100000,
+      "offset": 2200000,
+      "records": 15011
+    },
+    {
+      "file": "chunk_2300000.bin",
+      "matrices": 100000,
+      "offset": 2300000,
+      "records": 12450
+    },
+    {
+      "file": "chunk_2400000.bin",
+      "matrices": 100000,
+      "offset": 2400000,
+      "records": 10551
+    },
+    {
+      "file": "chunk_2500000.bin",
+      "matrices": 100000,
+      "offset": 2500000,
+      "records": 9675
+    },
+    {
+      "file": "chunk_2600000.bin",
+      "matrices": 100000,
+      "offset": 2600000,
+      "records": 5022
+    },
+    {
+      "file": "chunk_2700000.bin",
+      "matrices": 100000,
+      "offset": 2700000,
+      "records": 11159
+    },
+    {
+      "file": "chunk_2800000.bin",
+      "matrices": 100000,
+      "offset": 2800000,
+      "records": 9070
+    },
+    {
+      "file": "chunk_2900000.bin",
+      "matrices": 100000,
+      "offset": 2900000,
+      "records": 10515
+    },
+    {
+      "file": "chunk_3000000.bin",
+      "matrices": 100000,
+      "offset": 3000000,
+      "records": 11937
+    },
+    {
+      "file": "chunk_3100000.bin",
+      "matrices": 100000,
+      "offset": 3100000,
+      "records": 15872
+    },
+    {
+      "file": "chunk_3200000.bin",
+      "matrices": 100000,
+      "offset": 3200000,
+      "records": 16161
+    },
+    {
+      "file": "chunk_3300000.bin",
+      "matrices": 100000,
+      "offset": 3300000,
+      "records": 6553
+    },
+    {
+      "file": "chunk_3400000.bin",
+      "matrices": 100000,
+      "offset": 3400000,
+      "records": 11852
+    },
+    {
+      "file": "chunk_3500000.bin",
+      "matrices": 100000,
+      "offset": 3500000,
+      "records": 12323
+    },
+    {
+      "file": "chunk_3600000.bin",
+      "matrices": 100000,
+      "offset": 3600000,
+      "records": 12947
+    },
+    {
+      "file": "chunk_3700000.bin",
+      "matrices": 100000,
+      "offset": 3700000,
+      "records": 17028
+    },
+    {
+      "file": "chunk_3800000.bin",
+      "matrices": 100000,
+      "offset": 3800000,
+      "records": 16111
+    },
+    {
+      "file": "chunk_3900000.bin",
+      "matrices": 100000,
+      "offset": 3900000,
+      "records": 16772
+    },
+    {
+      "file": "chunk_4000000.bin",
+      "matrices": 100000,
+      "offset": 4000000,
+      "records": 13898
+    },
+    {
+      "file": "chunk_4100000.bin",
+      "matrices": 100000,
+      "offset": 4100000,
+      "records": 17719
+    },
+    {
+      "file": "chunk_4200000.bin",
+      "matrices": 100000,
+      "offset": 4200000,
+      "records": 17426
+    },
+    {
+      "file": "chunk_4300000.bin",
+      "matrices": 100000,
+      "offset": 4300000,
+      "records": 12009
+    },
+    {
+      "file": "chunk_4400000.bin",
+      "matrices": 100000,
+      "offset": 4400000,
+      "records": 16018
+    },
+    {
+      "file": "chunk_4500000.bin",
+      "matrices": 100000,
+      "offset": 4500000,
+      "records": 14145
+    },
+    {
+      "file": "chunk_4600000.bin",
+      "matrices": 100000,
+      "offset": 4600000,
+      "records": 12296
+    },
+    {
+      "file": "chunk_4700000.bin",
+      "matrices": 100000,
+      "offset": 4700000,
+      "records": 17723
+    },
+    {
+      "file": "chunk_4800000.bin",
+      "matrices": 100000,
+      "offset": 4800000,
+      "records": 16509
+    },
+    {
+      "file": "chunk_4900000.bin",
+      "matrices": 100000,
+      "offset": 4900000,
+      "records": 3559
+    },
+    {
+      "file": "chunk_5000000.bin",
+      "matrices": 100000,
+      "offset": 5000000,
+      "records": 12060
+    },
+    {
+      "file": "chunk_5100000.bin",
+      "matrices": 100000,
+      "offset": 5100000,
+      "records": 14016
+    },
+    {
+      "file": "chunk_5200000.bin",
+      "matrices": 100000,
+      "offset": 5200000,
+      "records": 14211
+    },
+    {
+      "file": "chunk_5300000.bin",
+      "matrices": 100000,
+      "offset": 5300000,
+      "records": 19028
+    },
+    {
+      "file": "chunk_5400000.bin",
+      "matrices": 100000,
+      "offset": 5400000,
+      "records": 15324
+    },
+    {
+      "file": "chunk_5500000.bin",
+      "matrices": 100000,
+      "offset": 5500000,
+      "records": 15365
+    },
+    {
+      "file": "chunk_5600000.bin",
+      "matrices": 100000,
+      "offset": 5600000,
+      "records": 22061
+    },
+    {
+      "file": "chunk_5700000.bin",
+      "matrices": 100000,
+      "offset": 5700000,
+      "records": 13126
+    },
+    {
+      "file": "chunk_5800000.bin",
+      "matrices": 100000,
+      "offset": 5800000,
+      "records": 20917
+    },
+    {
+      "file": "chunk_5900000.bin",
+      "matrices": 100000,
+      "offset": 5900000,
+      "records": 19431
+    },
+    {
+      "file": "chunk_6000000.bin",
+      "matrices": 100000,
+      "offset": 6000000,
+      "records": 15575
+    },
+    {
+      "file": "chunk_6100000.bin",
+      "matrices": 100000,
+      "offset": 6100000,
+      "records": 25579
+    },
+    {
+      "file": "chunk_6200000.bin",
+      "matrices": 100000,
+      "offset": 6200000,
+      "records": 4063
+    },
+    {
+      "file": "chunk_6300000.bin",
+      "matrices": 100000,
+      "offset": 6300000,
+      "records": 11487
+    },
+    {
+      "file": "chunk_6400000.bin",
+      "matrices": 100000,
+      "offset": 6400000,
+      "records": 18230
+    },
+    {
+      "file": "chunk_6500000.bin",
+      "matrices": 100000,
+      "offset": 6500000,
+      "records": 21988
+    },
+    {
+      "file": "chunk_6600000.bin",
+      "matrices": 100000,
+      "offset": 6600000,
+      "records": 14694
+    },
+    {
+      "file": "chunk_6700000.bin",
+      "matrices": 100000,
+      "offset": 6700000,
+      "records": 19911
+    },
+    {
+      "file": "chunk_6800000.bin",
+      "matrices": 100000,
+      "offset": 6800000,
+      "records": 18814
+    },
+    {
+      "file": "chunk_6900000.bin",
+      "matrices": 100000,
+      "offset": 6900000,
+      "records": 24789
+    },
+    {
+      "file": "chunk_7000000.bin",
+      "matrices": 100000,
+      "offset": 7000000,
+      "records": 10197
+    },
+    {
+      "file": "chunk_7100000.bin",
+      "matrices": 100000,
+      "offset": 7100000,
+      "records": 19033
+    },
+    {
+      "file": "chunk_7200000.bin",
+      "matrices": 100000,
+      "offset": 7200000,
+      "records": 22708
+    },
+    {
+      "file": "chunk_7300000.bin",
+      "matrices": 100000,
+      "offset": 7300000,
+      "records": 20363
+    },
+    {
+      "file": "chunk_7400000.bin",
+      "matrices": 100000,
+      "offset": 7400000,
+      "records": 18522
+    },
+    {
+      "file": "chunk_7500000.bin",
+      "matrices": 100000,
+      "offset": 7500000,
+      "records": 18243
+    },
+    {
+      "file": "chunk_7600000.bin",
+      "matrices": 100000,
+      "offset": 7600000,
+      "records": 19778
+    },
+    {
+      "file": "chunk_7700000.bin",
+      "matrices": 100000,
+      "offset": 7700000,
+      "records": 14804
+    },
+    {
+      "file": "chunk_7800000.bin",
+      "matrices": 100000,
+      "offset": 7800000,
+      "records": 15516
+    },
+    {
+      "file": "chunk_7900000.bin",
+      "matrices": 100000,
+      "offset": 7900000,
+      "records": 14151
+    },
+    {
+      "file": "chunk_8000000.bin",
+      "matrices": 100000,
+      "offset": 8000000,
+      "records": 7803
+    },
+    {
+      "file": "chunk_8100000.bin",
+      "matrices": 100000,
+      "offset": 8100000,
+      "records": 3160
+    },
+    {
+      "file": "chunk_8200000.bin",
+      "matrices": 100000,
+      "offset": 8200000,
+      "records": 2879
+    },
+    {
+      "file": "chunk_8300000.bin",
+      "matrices": 100000,
+      "offset": 8300000,
+      "records": 4480
+    },
+    {
+      "file": "chunk_8400000.bin",
+      "matrices": 100000,
+      "offset": 8400000,
+      "records": 4703
+    },
+    {
+      "file": "chunk_8500000.bin",
+      "matrices": 100000,
+      "offset": 8500000,
+      "records": 4889
+    },
+    {
+      "file": "chunk_8600000.bin",
+      "matrices": 100000,
+      "offset": 8600000,
+      "records": 5706
+    },
+    {
+      "file": "chunk_8700000.bin",
+      "matrices": 100000,
+      "offset": 8700000,
+      "records": 6970
+    },
+    {
+      "file": "chunk_8800000.bin",
+      "matrices": 100000,
+      "offset": 8800000,
+      "records": 2451
+    },
+    {
+      "file": "chunk_8900000.bin",
+      "matrices": 100000,
+      "offset": 8900000,
+      "records": 4450
+    },
+    {
+      "file": "chunk_9000000.bin",
+      "matrices": 100000,
+      "offset": 9000000,
+      "records": 2383
+    },
+    {
+      "file": "chunk_9100000.bin",
+      "matrices": 5190,
+      "offset": 9100000,
+      "records": 13
+    }
+  ],
+  "coverage": [
+    0,
+    9105190
+  ],
+  "hard_file": "data/n8/m8/n8m8_hard.bin",
+  "hard_file_bytes": 25180504,
+  "hard_file_sha256": "f22c6d2ee7f8359e99ac84030a27f17588ae46c069831b57cd7f0f5f97d77ff4",
+  "hard_record_count": 1049187,
+  "hard_record_size": 24,
+  "input_sha256": "4bff2f6e4af42bb2ff8517e08fd7ceff36767f8a6a7bd4b95f972799a7f597d0",
+  "kernel_count": 9105190
+}

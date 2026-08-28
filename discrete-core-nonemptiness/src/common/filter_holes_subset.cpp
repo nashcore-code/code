@@ -1,0 +1,4 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(int ac,char**av){if(ac!=4)return 2;int n=stoi(av[1]);ifstream f(av[2]);ofstream o(av[3]);string l,key,last;vector<int>bound;long long in=0,out=0;while(getline(f,l)){in++;auto b=l.find('|');string L=l.substr(0,b),h=l.substr(b+1);stringstream ss(L);int m,k;ss>>m>>k;vector<int>M(m);for(int&i:M)ss>>i;key=to_string(m)+","+to_string(k);for(int z:M)key+=","+to_string(z);if(key!=last){bound.assign(1<<n,0);for(int S=1;S<(1<<n);S++){vector<int>s;for(int c=0;c<m;c++)s.push_back(__builtin_popcount((unsigned)(M[c]&S)));sort(s.rbegin(),s.rend());for(int c=0;c<k;c++)bound[S]+=s[c];}last=key;}bool ok=1;for(int S=1;S<(1<<n)&&ok;S++){int z=0;for(int i=0;i<n;i++)if(S>>i&1)z+=h[i]-'0';if(z>bound[S])ok=0;}if(ok){o<<l<<"\n";out++;}}cerr<<"input "<<in<<" survivors "<<out<<"\n";}

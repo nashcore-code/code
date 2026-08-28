@@ -1,0 +1,18 @@
+{
+  "voters": 6,
+  "role": "induction base used by the unified at-most-seven theorem",
+  "full_rank_antichains_by_fractional_columns": {
+    "4": 279,
+    "5": 712,
+    "6": 1162
+  },
+  "full_rank_antichains_total": 2153,
+  "raw_minimal_targets": 32286,
+  "subset_filter_survivors": 6053,
+  "minimal_cover_filter_survivors": 46,
+  "upper_cells_generated": 597,
+  "final_cells": 46,
+  "bad_cells": 0,
+  "surplus_cells": 0
+}
+

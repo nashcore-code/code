@@ -1,0 +1,17 @@
+# Local build and regeneration products
+build/
+reproduced/
+full_run/
+quick_check/
+
+# Compiler and platform artifacts
+*.o
+*.dSYM/
+.DS_Store
+
+# Keep proof-relevant released logs under logs/; ignore ad hoc root logs.
+/*.log
+/*.err
+
+__pycache__/
+*.py[cod]

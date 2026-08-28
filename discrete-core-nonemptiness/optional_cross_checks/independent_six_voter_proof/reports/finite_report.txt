@@ -1,0 +1,39 @@
+EXACT FINITE VERIFICATION FOR THE SIX-VOTER REDUCTION
+
+Arithmetic: integer only; no floating point and no external optimizer.
+Reduced support orbits: m=4: 40, m=5: 305, m=6: 853
+Total reduced support orbits: 1198
+Kernel-budget cases: 3209
+Integer targets checked: 2873892
+Nonintegral targets: 1013055
+Targets with a failed singleton puncture: 1012795
+All such targets exactly certified fractionally infeasible: 1012795
+Fractionally feasible nonintegral targets: 46
+Targets with a strictly interior floor-cell witness: 8
+Maximum number of cap-cover dual arrangement vertices: 99
+
+Hole 1: m=4, kappa=2, supports={123,145,246,356}, h=(1,1,1,1,1,1), f=(1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {246,356} voter 2 -> {145,356} voter 3 -> {145,246} voter 4 -> {123,356} voter 5 -> {123,246} voter 6 -> {123,145}
+
+Hole 2: m=6, kappa=3, supports={12,13,23,45,46,56}, h=(1,1,1,1,1,1), f=(1/2,1/2,1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {23,45,46} voter 2 -> {13,45,46} voter 3 -> {12,45,46} voter 4 -> {12,13,56} voter 5 -> {12,13,46} voter 6 -> {12,13,45}
+
+Hole 3: m=6, kappa=3, supports={12,13,234,235,236,456}, h=(1,2,2,1,1,1), f=(1/2,1/2,1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {234,235,236} voter 2 -> {13,234,456} voter 3 -> {12,234,456} voter 4 -> {12,235,236} voter 5 -> {12,234,236} voter 6 -> {12,234,235}
+
+Hole 4: m=6, kappa=3, supports={123,124,134,235,236,156}, h=(2,2,2,1,1,1), f=(1/2,1/2,1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {124,235,236} voter 2 -> {123,134,156} voter 3 -> {123,124,156} voter 4 -> {123,235,156} voter 5 -> {123,124,236} voter 6 -> {123,124,235}
+
+Hole 5: m=6, kappa=3, supports={123,124,134,2345,2346,156}, h=(2,2,2,2,1,1), f=(1/2,1/2,1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {123,2345,2346} voter 2 -> {134,2345,156} voter 3 -> {124,2345,156} voter 4 -> {123,2345,156} voter 5 -> {123,124,2346} voter 6 -> {123,124,2345}
+
+Hole 6: m=6, kappa=2, supports={123,124,345,346,156,256}, h=(1,1,1,1,1,1), f=(1/3,1/3,1/3,1/3,1/3,1/3)
+  singleton-puncture witnesses: voter 1 -> {345,256} voter 2 -> {345,156} voter 3 -> {124,156} voter 4 -> {123,156} voter 5 -> {123,346} voter 6 -> {123,345}
+
+Hole 7: m=6, kappa=4, supports={123,124,345,346,156,256}, h=(2,2,2,2,2,2), f=(2/3,2/3,2/3,2/3,2/3,2/3)
+  singleton-puncture witnesses: voter 1 -> {123,345,346,256} voter 2 -> {123,345,346,156} voter 3 -> {124,345,156,256} voter 4 -> {123,345,156,256} voter 5 -> {123,124,346,156} voter 6 -> {123,124,345,156}
+
+Hole 8: m=6, kappa=3, supports={1234,1235,1236,1456,2456,3456}, h=(2,2,2,2,2,2), f=(1/2,1/2,1/2,1/2,1/2,1/2)
+  singleton-puncture witnesses: voter 1 -> {1234,2456,3456} voter 2 -> {1234,1456,3456} voter 3 -> {1234,1456,2456} voter 4 -> {1235,1236,1456} voter 5 -> {1234,1236,1456} voter 6 -> {1234,1235,1456}
+
+RESULT: PASS.  The exhaustive finite lemma used in the six-voter proof holds.

@@ -1,0 +1,24 @@
+{
+  "voters": 7,
+  "positive_dual_antichains_by_fractional_columns": {
+    "4": 1222,
+    "5": 6472,
+    "6": 22302,
+    "7": 31850
+  },
+  "positive_dual_antichains_total": 61846,
+  "matrix_budget_cases": 208472,
+  "raw_minimal_targets": 3200557,
+  "subset_filter_survivors": 888719,
+  "minimal_cover_filter_survivors": 16854,
+  "upper_cells_generated": 1579161,
+  "final_cells": 30929,
+  "primitive_cells": 16854,
+  "nonprimitive_cells": 14075,
+  "exact_cell_linear_programs": 43353,
+  "surplus_cells": 298,
+  "square_surplus_cells": 294,
+  "rectangular_surplus_cells": 4,
+  "bad_cells": 0
+}
+

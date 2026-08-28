@@ -1,0 +1,1 @@
+PASS kernels=9105190 sorted_unique=1 antichain=1 full_rank=1 positive_dual=1 max_abs_det=56 max_abs_cramer=32 min_abs_det=1

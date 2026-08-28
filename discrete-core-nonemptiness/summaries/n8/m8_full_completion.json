@@ -1,0 +1,100 @@
+{
+  "adaptive_certificates": 10,
+  "certificate_records": 1049187,
+  "chunk_size": 100000,
+  "completion_date_utc": "2026-08-07",
+  "completion_run_metrics": {
+    "cpu_percent": "384%",
+    "elapsed_wall": "1:20:27",
+    "filesystem_outputs": 389280,
+    "peak_rss_kb": 592508,
+    "system_seconds": "14.85",
+    "user_seconds": "18533.90"
+  },
+  "exact_replay": {
+    "aggregate_agreement": "PASS",
+    "exact_price_LPs": 4430958,
+    "gmp_arbitrary_precision": "PASS",
+    "min_exact_price": "1/11",
+    "min_singleton_or_sum": "1/1008",
+    "open_floor_checks": 6543104,
+    "saturation_skips": 122280434,
+    "signed_rational": "PASS"
+  },
+  "failure_records": 0,
+  "files": {
+    "cps8_all.bin": {
+      "audited_reference_sha256": "e529d6ca82525073c90d374dff789f3fdc750555cc480ec55fc9304f37046c12",
+      "bytes": 67147976,
+      "matches_audited_reference": false,
+      "sha256": "527d8237a2e4aaa79a5767fc5b6cfed8e9094f11e62f413e49a023dff683021b"
+    },
+    "cps8_fail.bin": {
+      "audited_reference_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "bytes": 8,
+      "matches_audited_reference": true,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "n8m8_hard.bin": {
+      "audited_reference_sha256": "f22c6d2ee7f8359e99ac84030a27f17588ae46c069831b57cd7f0f5f97d77ff4",
+      "bytes": 25180504,
+      "matches_audited_reference": true,
+      "sha256": "f22c6d2ee7f8359e99ac84030a27f17588ae46c069831b57cd7f0f5f97d77ff4"
+    },
+    "n8m8_pos.bin": {
+      "audited_reference_sha256": "4bff2f6e4af42bb2ff8517e08fd7ceff36767f8a6a7bd4b95f972799a7f597d0",
+      "bytes": 72841528,
+      "matches_audited_reference": true,
+      "sha256": "4bff2f6e4af42bb2ff8517e08fd7ceff36767f8a6a7bd4b95f972799a7f597d0"
+    }
+  },
+  "fixed_certificates": 1049177,
+  "hard_records": 1049187,
+  "independent_binary_audit": {
+    "command": "scripts/independent_m8_binary_audit.py",
+    "log": "logs/n8/proof_complete_independent_binary_audit.log",
+    "status": "PASS"
+  },
+  "jobs": 5,
+  "positive_enumeration": {
+    "metrics": {
+      "cpu_percent": "366%",
+      "elapsed_wall": "6:47.62",
+      "filesystem_outputs": 142376,
+      "peak_rss_kb": 737424,
+      "system_seconds": "2.12",
+      "user_seconds": "1491.19"
+    },
+    "parent_kernels_m7": 3541727,
+    "positive_kernels_m8": 9105190
+  },
+  "quick_verify": {
+    "status": "PASS",
+    "command": "scripts/quick_verify.sh",
+    "log": "logs/n8/proof_complete_quick_verify.log",
+    "metrics": {
+      "elapsed_wall": "23:31.65",
+      "peak_rss_kb": "642728",
+      "user_seconds": "3665.17",
+      "system_seconds": "6.36",
+      "cpu_percent": "260%"
+    }
+  },
+  "release_regressions": {
+    "status": "PASS",
+    "command": "scripts/test_n8_release_regressions.sh",
+    "log": "logs/n8/proof_complete_release_regressions.log"
+  },
+  "scope": "full eight-row square stage m=8",
+  "square_kernel_audit": {
+    "antichain": true,
+    "full_rank": true,
+    "kernels": 9105190,
+    "max_abs_cramer": 32,
+    "max_abs_det": 56,
+    "min_abs_det": 1,
+    "positive_dual": true,
+    "sorted_unique": true
+  },
+  "status": "PASS"
+}

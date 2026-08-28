@@ -1,0 +1,35 @@
+{
+  "adaptive_certificates": 10,
+  "by_residual_budget": {
+    "2": {
+      "adaptive": 8,
+      "fixed": 59350
+    },
+    "3": {
+      "adaptive": 2,
+      "fixed": 258572
+    },
+    "4": {
+      "adaptive": 0,
+      "fixed": 413323
+    },
+    "5": {
+      "adaptive": 0,
+      "fixed": 258574
+    },
+    "6": {
+      "adaptive": 0,
+      "fixed": 59358
+    }
+  },
+  "certificate_file": "data/n8/m8/cps8_all.bin",
+  "certificate_file_bytes": 67147976,
+  "certificate_records": 1049187,
+  "certificate_sha256": "527d8237a2e4aaa79a5767fc5b6cfed8e9094f11e62f413e49a023dff683021b",
+  "failure_file": "data/n8/m8/cps8_fail.bin",
+  "failure_file_bytes": 8,
+  "failure_records": 0,
+  "failure_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+  "fixed_certificates": 1049177,
+  "hard_records": 1049187
+}

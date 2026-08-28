@@ -1,0 +1,141 @@
+{
+  "theorem": "Every approval-based committee election with at most eight equally weighted voters has a committee in the discrete core.",
+  "status": "data-complete proof artifact; full m=8 exact replay available",
+  "manuscript_result_status": "exact computer-assisted proof; not peer reviewed or formalized in a proof assistant",
+  "artifact_data_status": {
+    "state": "data-complete/proof-replayable",
+    "full_square_stage_replay_available_from_this_archive": true,
+    "missing_files": [],
+    "note": "All four proof-relevant m=8 square-stage files are present. The canonical kernel and hard-cell files match the audited hashes; the certificate stream covers every hard record, has zero failures, and passes independent signed-rational and GMP exact replay.",
+    "present_proof_files": [
+      "data/n8/m8/n8m8_pos.bin",
+      "data/n8/m8/n8m8_hard.bin",
+      "data/n8/m8/cps8_all.bin",
+      "data/n8/m8/cps8_fail.bin"
+    ]
+  },
+  "fractional_columns": {
+    "4": {
+      "positive_dual_kernels": 4779,
+      "matrix_budget_cases": 4779,
+      "feasible_nonroundable_cells": 22,
+      "hard_cells": 0,
+      "fixed_certificates": 0,
+      "adaptive_certificates": 0
+    },
+    "5": {
+      "positive_dual_kernels": 56479,
+      "matrix_budget_cases": 112958,
+      "feasible_nonroundable_cells": 84,
+      "hard_cells": 0,
+      "fixed_certificates": 0,
+      "adaptive_certificates": 0
+    },
+    "6": {
+      "positive_dual_kernels": 561445,
+      "matrix_budget_cases": 1684335,
+      "feasible_nonroundable_cells": 5766,
+      "hard_cells": 168,
+      "fixed_certificates": 163,
+      "adaptive_certificates": 5,
+      "exact_replay": {
+        "status": "PASS",
+        "arithmetic": "GMP arbitrary-precision rationals",
+        "certificates": 168,
+        "fixed": 163,
+        "adaptive": 5,
+        "empty_saturation_domains": 9637,
+        "exact_price_domains": 16144,
+        "minimum_singleton_or_adaptive_sum_margin": "1/48",
+        "minimum_exact_price_margin": "1/12"
+      }
+    },
+    "7": {
+      "positive_dual_kernels": 3541727,
+      "matrix_budget_cases": 14166908,
+      "feasible_nonroundable_cells": 89286,
+      "hard_cells": 36128,
+      "fixed_certificates": 36119,
+      "adaptive_certificates": 9
+    },
+    "8": {
+      "positive_dual_kernels": 9105190,
+      "matrix_budget_cases": 45525950,
+      "feasible_nonroundable_cells": 1081420,
+      "hard_cells": 1049187,
+      "fixed_certificates": 1049177,
+      "adaptive_certificates": 10,
+      "failure_records": 0,
+      "by_residual_budget": {
+        "2": {
+          "feasible": 59523,
+          "hard": 59358,
+          "fixed": 59350,
+          "adaptive": 8
+        },
+        "3": {
+          "feasible": 262243,
+          "hard": 258574,
+          "fixed": 258572,
+          "adaptive": 2
+        },
+        "4": {
+          "feasible": 437888,
+          "hard": 413323,
+          "fixed": 413323,
+          "adaptive": 0
+        },
+        "5": {
+          "feasible": 262243,
+          "hard": 258574,
+          "fixed": 258574,
+          "adaptive": 0
+        },
+        "6": {
+          "feasible": 59523,
+          "hard": 59358,
+          "fixed": 59358,
+          "adaptive": 0
+        }
+      },
+      "exact_replay": {
+        "certificates": 1049187,
+        "saturation_exclusions": 122280434,
+        "open_floor_reserve_checks": 6543104,
+        "exact_price_linear_programs": 4430958,
+        "minimum_singleton_or_adaptive_sum_margin": "1/1008",
+        "minimum_exact_price_lp_margin": "1/11",
+        "signed_64_replay": "PASS",
+        "gmp_arbitrary_precision_replay": "PASS",
+        "signed64_gmp_aggregate_agreement": "PASS"
+      },
+      "sha256": {
+        "positive_kernel_file": "4bff2f6e4af42bb2ff8517e08fd7ceff36767f8a6a7bd4b95f972799a7f597d0",
+        "hard_cell_file": "f22c6d2ee7f8359e99ac84030a27f17588ae46c069831b57cd7f0f5f97d77ff4",
+        "certificate_file": "527d8237a2e4aaa79a5767fc5b6cfed8e9094f11e62f413e49a023dff683021b",
+        "failure_file": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+      },
+      "kernel_list_verification": {
+        "status": "PASS",
+        "kernels": 9105190,
+        "sorted_unique": true,
+        "antichain": true,
+        "full_rank": true,
+        "positive_dual": true,
+        "maximum_absolute_determinant": 56,
+        "maximum_absolute_cramer_numerator": 32,
+        "minimum_nonzero_absolute_determinant": 1
+      },
+      "completion_report": "summaries/n8/m8_full_completion.json"
+    }
+  },
+  "totals": {
+    "positive_dual_kernels": 13269620,
+    "matrix_budget_cases": 61494930,
+    "feasible_nonroundable_cells": 1176578,
+    "hard_cells": 1085483,
+    "fixed_certificates": 1085459,
+    "adaptive_certificates": 24,
+    "unclassified_cells": 0
+  }
+}

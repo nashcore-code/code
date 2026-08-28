@@ -1,0 +1,820 @@
+START m8-only completion jobs=5 chunk_size=100000
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread <artifact-root>/src/n8/binary_format_selftest.cpp -o <regeneration-output>/bin/n8_binary_format_selftest
+  completed in 0.37s
++ <regeneration-output>/bin/n8_binary_format_selftest
+  completed in 0.00s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread <artifact-root>/src/n8/m8_canonical_enumerator.cpp -o <regeneration-output>/bin/n8_enumerate
+  completed in 2.82s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=4 <artifact-root>/src/n8/eight_row_floor_cell_scanner_template.cpp -o <regeneration-output>/bin/n8_scan_m4
+  completed in 4.86s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=5 <artifact-root>/src/n8/eight_row_floor_cell_scanner_template.cpp -o <regeneration-output>/bin/n8_scan_m5
+  completed in 4.66s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=6 <artifact-root>/src/n8/eight_row_floor_cell_scanner_template.cpp -o <regeneration-output>/bin/n8_scan_m6
+  completed in 4.60s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=7 <artifact-root>/src/n8/eight_row_floor_cell_scanner_template.cpp -o <regeneration-output>/bin/n8_scan_m7
+  completed in 4.91s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=8 <artifact-root>/src/n8/eight_row_floor_cell_scanner_template.cpp -o <regeneration-output>/bin/n8_scan_m8
+  completed in 5.00s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread <artifact-root>/src/n8/m8_floor_cell_scanner.cpp -o <regeneration-output>/bin/n8_scan_m8_specialized
+  completed in 5.00s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=7 <artifact-root>/src/n8/m8_certificate_proposer.cpp -o <regeneration-output>/bin/n8_propose_m7
+  completed in 2.11s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread -DMM=8 <artifact-root>/src/n8/m8_certificate_proposer.cpp -o <regeneration-output>/bin/n8_propose_m8
+  completed in 2.18s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread <artifact-root>/src/n8/m8_record_checker.cpp -o <regeneration-output>/bin/n8_record_check
+  completed in 0.87s
++ <cxx-wrapper> -O3 -DNDEBUG -std=c++20 -pthread <artifact-root>/src/n8/m8_kernel_list_verifier.cpp -o <regeneration-output>/bin/n8_kernel_check_m8
+  completed in 0.50s
++ <cxx-wrapper> -O2 -DNDEBUG -std=c++20 <artifact-root>/src/n8/m8_exact_checker_ll.cpp -o <regeneration-output>/bin/n8_exact_check_m8_ll
+  completed in 2.37s
++ <cxx-wrapper> -O2 -DNDEBUG -std=c++20 <artifact-root>/src/n8/m8_exact_checker_gmp.cpp -o <regeneration-output>/bin/n8_exact_check_m8_gmp -lgmpxx -lgmp
+  completed in 1.81s
++ <cxx-wrapper> -O2 -DNDEBUG -std=c++20 -DMM=7 <artifact-root>/src/n8/exact_cps_fullsat_checker.cpp -o <regeneration-output>/bin/n8_exact_check_m7
+  completed in 2.52s
++ <cxx-wrapper> -O2 -DNDEBUG -std=c++20 <artifact-root>/src/n8/m6_exact_certificate_checker.cpp -o <regeneration-output>/bin/n8_exact_check_m6 -lgmpxx -lgmp
+  completed in 1.86s
++ g++ -O3 -DNDEBUG -std=c++20 -pthread -DMM=8 <artifact-root>/src/n8/m8_certificate_proposer.cpp -o <regeneration-output>/bin/n8_propose_m8
+  completed in 1.83s
+PASS positive kernels=9105190 sha256=4bff2f6e4af42bb2ff8517e08fd7ceff36767f8a6a7bd4b95f972799a7f597d0
++ <regeneration-output>/bin/n8_kernel_check_m8 <regeneration-output>/data/m8/n8m8_pos.bin
+  completed in 117.78s
+PASS kernels=9105190 sorted_unique=1 antichain=1 full_rank=1 positive_dual=1 max_abs_det=56 max_abs_cramer=32 min_abs_det=1
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/logs/verification/scanner_crosscheck/template.bin 5 1000 0
+  completed in 0.06s
++ <regeneration-output>/bin/n8_scan_m8_specialized <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/logs/verification/scanner_crosscheck/specialized.bin 5 1000 0
+  completed in 0.06s
+PASS generic/specialized scanner prefix cross-check
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0000000.bin 5 100000 0
+  completed in 7.27s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0100000.bin 5 100000 100000
+  completed in 7.53s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0200000.bin 5 100000 200000
+  completed in 6.45s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0300000.bin 5 100000 300000
+  completed in 10.25s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0400000.bin 5 100000 400000
+  completed in 22.16s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0500000.bin 5 100000 500000
+  completed in 20.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0600000.bin 5 100000 600000
+  completed in 10.31s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0700000.bin 5 100000 700000
+  completed in 20.64s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0800000.bin 5 100000 800000
+  completed in 29.54s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_0900000.bin 5 100000 900000
+  completed in 21.77s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1000000.bin 5 100000 1000000
+  completed in 32.33s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1100000.bin 5 100000 1100000
+  completed in 42.31s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1200000.bin 5 100000 1200000
+  completed in 30.34s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1300000.bin 5 100000 1300000
+  completed in 15.58s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1400000.bin 5 100000 1400000
+  completed in 28.07s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1500000.bin 5 100000 1500000
+  completed in 35.75s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1600000.bin 5 100000 1600000
+  completed in 29.24s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1700000.bin 5 100000 1700000
+  completed in 34.06s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1800000.bin 5 100000 1800000
+  completed in 35.74s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_1900000.bin 5 100000 1900000
+  completed in 48.14s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2000000.bin 5 100000 2000000
+  completed in 26.03s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2100000.bin 5 100000 2100000
+  completed in 37.85s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2200000.bin 5 100000 2200000
+  completed in 58.57s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2300000.bin 5 100000 2300000
+  completed in 54.20s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2400000.bin 5 100000 2400000
+  completed in 60.70s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2500000.bin 5 100000 2500000
+  completed in 37.10s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2600000.bin 5 100000 2600000
+  completed in 19.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2700000.bin 5 100000 2700000
+  completed in 40.84s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2800000.bin 5 100000 2800000
+  completed in 33.26s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_2900000.bin 5 100000 2900000
+  completed in 43.16s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3000000.bin 5 100000 3000000
+  completed in 43.55s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3100000.bin 5 100000 3100000
+  completed in 58.60s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3200000.bin 5 100000 3200000
+  completed in 57.87s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3300000.bin 5 100000 3300000
+  completed in 24.86s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3400000.bin 5 100000 3400000
+  completed in 39.64s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3500000.bin 5 100000 3500000
+  completed in 44.72s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3600000.bin 5 100000 3600000
+  completed in 48.56s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3700000.bin 5 100000 3700000
+  completed in 60.39s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3800000.bin 5 100000 3800000
+  completed in 53.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_3900000.bin 5 100000 3900000
+  completed in 50.19s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4000000.bin 5 100000 4000000
+  completed in 51.74s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4100000.bin 5 100000 4100000
+  completed in 56.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4200000.bin 5 100000 4200000
+  completed in 60.07s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4300000.bin 5 100000 4300000
+  completed in 43.61s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4400000.bin 5 100000 4400000
+  completed in 52.35s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4500000.bin 5 100000 4500000
+  completed in 47.55s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4600000.bin 5 100000 4600000
+  completed in 50.71s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4700000.bin 5 100000 4700000
+  completed in 59.90s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4800000.bin 5 100000 4800000
+  completed in 60.76s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_4900000.bin 5 100000 4900000
+  completed in 17.57s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5000000.bin 5 100000 5000000
+  completed in 37.95s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5100000.bin 5 100000 5100000
+  completed in 46.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5200000.bin 5 100000 5200000
+  completed in 50.81s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5300000.bin 5 100000 5300000
+  completed in 66.67s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5400000.bin 5 100000 5400000
+  completed in 50.81s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5500000.bin 5 100000 5500000
+  completed in 52.32s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5600000.bin 5 100000 5600000
+  completed in 73.51s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5700000.bin 5 100000 5700000
+  completed in 47.07s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5800000.bin 5 100000 5800000
+  completed in 72.52s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_5900000.bin 5 100000 5900000
+  completed in 67.32s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6000000.bin 5 100000 6000000
+  completed in 54.97s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6100000.bin 5 100000 6100000
+  completed in 77.07s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6200000.bin 5 100000 6200000
+  completed in 25.61s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6300000.bin 5 100000 6300000
+  completed in 36.33s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6400000.bin 5 100000 6400000
+  completed in 59.61s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6500000.bin 5 100000 6500000
+  completed in 68.90s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6600000.bin 5 100000 6600000
+  completed in 49.14s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6700000.bin 5 100000 6700000
+  completed in 84.26s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6800000.bin 5 100000 6800000
+  completed in 59.54s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_6900000.bin 5 100000 6900000
+  completed in 73.63s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7000000.bin 5 100000 7000000
+  completed in 44.21s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7100000.bin 5 100000 7100000
+  completed in 58.03s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7200000.bin 5 100000 7200000
+  completed in 67.06s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7300000.bin 5 100000 7300000
+  completed in 67.86s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7400000.bin 5 100000 7400000
+  completed in 60.64s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7500000.bin 5 100000 7500000
+  completed in 55.17s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7600000.bin 5 100000 7600000
+  completed in 57.89s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7700000.bin 5 100000 7700000
+  completed in 45.98s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7800000.bin 5 100000 7800000
+  completed in 47.86s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_7900000.bin 5 100000 7900000
+  completed in 46.92s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8000000.bin 5 100000 8000000
+  completed in 30.79s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8100000.bin 5 100000 8100000
+  completed in 21.13s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8200000.bin 5 100000 8200000
+  completed in 17.68s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8300000.bin 5 100000 8300000
+  completed in 26.38s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8400000.bin 5 100000 8400000
+  completed in 26.01s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8500000.bin 5 100000 8500000
+  completed in 29.44s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8600000.bin 5 100000 8600000
+  completed in 28.64s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8700000.bin 5 100000 8700000
+  completed in 28.41s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8800000.bin 5 100000 8800000
+  completed in 16.93s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_8900000.bin 5 100000 8900000
+  completed in 20.27s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_9000000.bin 5 100000 9000000
+  completed in 15.72s
++ <regeneration-output>/bin/n8_scan_m8 <regeneration-output>/data/m8/n8m8_pos.bin <regeneration-output>/chunks/m8/scan/chunk_9100000.bin 5 5190 9100000
+  completed in 0.40s
++ python3 <artifact-root>/src/n8/merge_and_summarize.py <regeneration-output>/chunks/m8/scan <regeneration-output>/data/m8/n8m8_hard.bin <regeneration-output>/summaries/m8_scan_summary.json --total 9105190
+  completed in 0.86s
+PASS hard records=1049187 sha256=f22c6d2ee7f8359e99ac84030a27f17588ae46c069831b57cd7f0f5f97d77ff4
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0000000.bin <regeneration-output>/chunks/m8/certificates/cert_0000000.bin <regeneration-output>/chunks/m8/certificates/fail_0000000.bin
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0100000.bin <regeneration-output>/chunks/m8/certificates/cert_0100000.bin <regeneration-output>/chunks/m8/certificates/fail_0100000.bin
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0200000.bin <regeneration-output>/chunks/m8/certificates/cert_0200000.bin <regeneration-output>/chunks/m8/certificates/fail_0200000.bin
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0300000.bin <regeneration-output>/chunks/m8/certificates/cert_0300000.bin <regeneration-output>/chunks/m8/certificates/fail_0300000.bin
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0400000.bin <regeneration-output>/chunks/m8/certificates/cert_0400000.bin <regeneration-output>/chunks/m8/certificates/fail_0400000.bin
+  completed in 0.35s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0500000.bin <regeneration-output>/chunks/m8/certificates/cert_0500000.bin <regeneration-output>/chunks/m8/certificates/fail_0500000.bin
+  completed in 0.47s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0600000.bin <regeneration-output>/chunks/m8/certificates/cert_0600000.bin <regeneration-output>/chunks/m8/certificates/fail_0600000.bin
+  completed in 0.52s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0700000.bin <regeneration-output>/chunks/m8/certificates/cert_0700000.bin <regeneration-output>/chunks/m8/certificates/fail_0700000.bin
+  completed in 0.76s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0800000.bin <regeneration-output>/chunks/m8/certificates/cert_0800000.bin <regeneration-output>/chunks/m8/certificates/fail_0800000.bin
+  completed in 0.70s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_0900000.bin <regeneration-output>/chunks/m8/certificates/cert_0900000.bin <regeneration-output>/chunks/m8/certificates/fail_0900000.bin
+  completed in 1.36s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1000000.bin <regeneration-output>/chunks/m8/certificates/cert_1000000.bin <regeneration-output>/chunks/m8/certificates/fail_1000000.bin
+  completed in 1.23s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1100000.bin <regeneration-output>/chunks/m8/certificates/cert_1100000.bin <regeneration-output>/chunks/m8/certificates/fail_1100000.bin
+  completed in 1.56s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1200000.bin <regeneration-output>/chunks/m8/certificates/cert_1200000.bin <regeneration-output>/chunks/m8/certificates/fail_1200000.bin
+  completed in 1.91s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1300000.bin <regeneration-output>/chunks/m8/certificates/cert_1300000.bin <regeneration-output>/chunks/m8/certificates/fail_1300000.bin
+  completed in 1.75s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1400000.bin <regeneration-output>/chunks/m8/certificates/cert_1400000.bin <regeneration-output>/chunks/m8/certificates/fail_1400000.bin
+  completed in 0.98s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1500000.bin <regeneration-output>/chunks/m8/certificates/cert_1500000.bin <regeneration-output>/chunks/m8/certificates/fail_1500000.bin
+  completed in 2.49s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1600000.bin <regeneration-output>/chunks/m8/certificates/cert_1600000.bin <regeneration-output>/chunks/m8/certificates/fail_1600000.bin
+  completed in 2.08s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1700000.bin <regeneration-output>/chunks/m8/certificates/cert_1700000.bin <regeneration-output>/chunks/m8/certificates/fail_1700000.bin
+  completed in 3.07s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1800000.bin <regeneration-output>/chunks/m8/certificates/cert_1800000.bin <regeneration-output>/chunks/m8/certificates/fail_1800000.bin
+  completed in 3.14s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_1900000.bin <regeneration-output>/chunks/m8/certificates/cert_1900000.bin <regeneration-output>/chunks/m8/certificates/fail_1900000.bin
+  completed in 2.71s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2000000.bin <regeneration-output>/chunks/m8/certificates/cert_2000000.bin <regeneration-output>/chunks/m8/certificates/fail_2000000.bin
+  completed in 2.91s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2100000.bin <regeneration-output>/chunks/m8/certificates/cert_2100000.bin <regeneration-output>/chunks/m8/certificates/fail_2100000.bin
+  completed in 2.79s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2200000.bin <regeneration-output>/chunks/m8/certificates/cert_2200000.bin <regeneration-output>/chunks/m8/certificates/fail_2200000.bin
+  completed in 3.58s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2300000.bin <regeneration-output>/chunks/m8/certificates/cert_2300000.bin <regeneration-output>/chunks/m8/certificates/fail_2300000.bin
+  completed in 2.30s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2400000.bin <regeneration-output>/chunks/m8/certificates/cert_2400000.bin <regeneration-output>/chunks/m8/certificates/fail_2400000.bin
+  completed in 2.47s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2500000.bin <regeneration-output>/chunks/m8/certificates/cert_2500000.bin <regeneration-output>/chunks/m8/certificates/fail_2500000.bin
+  completed in 3.96s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2600000.bin <regeneration-output>/chunks/m8/certificates/cert_2600000.bin <regeneration-output>/chunks/m8/certificates/fail_2600000.bin
+  completed in 2.37s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2700000.bin <regeneration-output>/chunks/m8/certificates/cert_2700000.bin <regeneration-output>/chunks/m8/certificates/fail_2700000.bin
+  completed in 1.48s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2800000.bin <regeneration-output>/chunks/m8/certificates/cert_2800000.bin <regeneration-output>/chunks/m8/certificates/fail_2800000.bin
+  completed in 2.32s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_2900000.bin <regeneration-output>/chunks/m8/certificates/cert_2900000.bin <regeneration-output>/chunks/m8/certificates/fail_2900000.bin
+  completed in 3.90s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3000000.bin <regeneration-output>/chunks/m8/certificates/cert_3000000.bin <regeneration-output>/chunks/m8/certificates/fail_3000000.bin
+  completed in 4.23s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3100000.bin <regeneration-output>/chunks/m8/certificates/cert_3100000.bin <regeneration-output>/chunks/m8/certificates/fail_3100000.bin
+  completed in 2.84s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3200000.bin <regeneration-output>/chunks/m8/certificates/cert_3200000.bin <regeneration-output>/chunks/m8/certificates/fail_3200000.bin
+  completed in 3.38s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3300000.bin <regeneration-output>/chunks/m8/certificates/cert_3300000.bin <regeneration-output>/chunks/m8/certificates/fail_3300000.bin
+  completed in 3.52s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3400000.bin <regeneration-output>/chunks/m8/certificates/cert_3400000.bin <regeneration-output>/chunks/m8/certificates/fail_3400000.bin
+  completed in 4.29s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3500000.bin <regeneration-output>/chunks/m8/certificates/cert_3500000.bin <regeneration-output>/chunks/m8/certificates/fail_3500000.bin
+  completed in 4.38s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3600000.bin <regeneration-output>/chunks/m8/certificates/cert_3600000.bin <regeneration-output>/chunks/m8/certificates/fail_3600000.bin
+  completed in 2.09s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3700000.bin <regeneration-output>/chunks/m8/certificates/cert_3700000.bin <regeneration-output>/chunks/m8/certificates/fail_3700000.bin
+  completed in 3.21s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3800000.bin <regeneration-output>/chunks/m8/certificates/cert_3800000.bin <regeneration-output>/chunks/m8/certificates/fail_3800000.bin
+  completed in 3.10s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_3900000.bin <regeneration-output>/chunks/m8/certificates/cert_3900000.bin <regeneration-output>/chunks/m8/certificates/fail_3900000.bin
+  completed in 3.04s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4000000.bin <regeneration-output>/chunks/m8/certificates/cert_4000000.bin <regeneration-output>/chunks/m8/certificates/fail_4000000.bin
+  completed in 3.18s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4100000.bin <regeneration-output>/chunks/m8/certificates/cert_4100000.bin <regeneration-output>/chunks/m8/certificates/fail_4100000.bin
+  completed in 3.42s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4200000.bin <regeneration-output>/chunks/m8/certificates/cert_4200000.bin <regeneration-output>/chunks/m8/certificates/fail_4200000.bin
+  completed in 4.22s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4300000.bin <regeneration-output>/chunks/m8/certificates/cert_4300000.bin <regeneration-output>/chunks/m8/certificates/fail_4300000.bin
+  completed in 3.41s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4400000.bin <regeneration-output>/chunks/m8/certificates/cert_4400000.bin <regeneration-output>/chunks/m8/certificates/fail_4400000.bin
+  completed in 4.23s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4500000.bin <regeneration-output>/chunks/m8/certificates/cert_4500000.bin <regeneration-output>/chunks/m8/certificates/fail_4500000.bin
+  completed in 3.52s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4600000.bin <regeneration-output>/chunks/m8/certificates/cert_4600000.bin <regeneration-output>/chunks/m8/certificates/fail_4600000.bin
+  completed in 2.70s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4700000.bin <regeneration-output>/chunks/m8/certificates/cert_4700000.bin <regeneration-output>/chunks/m8/certificates/fail_4700000.bin
+  completed in 3.80s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4800000.bin <regeneration-output>/chunks/m8/certificates/cert_4800000.bin <regeneration-output>/chunks/m8/certificates/fail_4800000.bin
+  completed in 2.62s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_4900000.bin <regeneration-output>/chunks/m8/certificates/cert_4900000.bin <regeneration-output>/chunks/m8/certificates/fail_4900000.bin
+  completed in 3.85s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5000000.bin <regeneration-output>/chunks/m8/certificates/cert_5000000.bin <regeneration-output>/chunks/m8/certificates/fail_5000000.bin
+  completed in 3.48s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5100000.bin <regeneration-output>/chunks/m8/certificates/cert_5100000.bin <regeneration-output>/chunks/m8/certificates/fail_5100000.bin
+  completed in 0.75s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5200000.bin <regeneration-output>/chunks/m8/certificates/cert_5200000.bin <regeneration-output>/chunks/m8/certificates/fail_5200000.bin
+  completed in 3.48s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5300000.bin <regeneration-output>/chunks/m8/certificates/cert_5300000.bin <regeneration-output>/chunks/m8/certificates/fail_5300000.bin
+  completed in 3.14s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5400000.bin <regeneration-output>/chunks/m8/certificates/cert_5400000.bin <regeneration-output>/chunks/m8/certificates/fail_5400000.bin
+  completed in 3.10s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5500000.bin <regeneration-output>/chunks/m8/certificates/cert_5500000.bin <regeneration-output>/chunks/m8/certificates/fail_5500000.bin
+  completed in 3.53s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5600000.bin <regeneration-output>/chunks/m8/certificates/cert_5600000.bin <regeneration-output>/chunks/m8/certificates/fail_5600000.bin
+  completed in 3.51s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5700000.bin <regeneration-output>/chunks/m8/certificates/cert_5700000.bin <regeneration-output>/chunks/m8/certificates/fail_5700000.bin
+  completed in 3.26s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5800000.bin <regeneration-output>/chunks/m8/certificates/cert_5800000.bin <regeneration-output>/chunks/m8/certificates/fail_5800000.bin
+  completed in 4.34s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_5900000.bin <regeneration-output>/chunks/m8/certificates/cert_5900000.bin <regeneration-output>/chunks/m8/certificates/fail_5900000.bin
+  completed in 3.52s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6000000.bin <regeneration-output>/chunks/m8/certificates/cert_6000000.bin <regeneration-output>/chunks/m8/certificates/fail_6000000.bin
+  completed in 2.91s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6100000.bin <regeneration-output>/chunks/m8/certificates/cert_6100000.bin <regeneration-output>/chunks/m8/certificates/fail_6100000.bin
+  completed in 4.76s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6200000.bin <regeneration-output>/chunks/m8/certificates/cert_6200000.bin <regeneration-output>/chunks/m8/certificates/fail_6200000.bin
+  completed in 0.74s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6300000.bin <regeneration-output>/chunks/m8/certificates/cert_6300000.bin <regeneration-output>/chunks/m8/certificates/fail_6300000.bin
+  completed in 3.89s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6400000.bin <regeneration-output>/chunks/m8/certificates/cert_6400000.bin <regeneration-output>/chunks/m8/certificates/fail_6400000.bin
+  completed in 3.51s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6500000.bin <regeneration-output>/chunks/m8/certificates/cert_6500000.bin <regeneration-output>/chunks/m8/certificates/fail_6500000.bin
+  completed in 4.59s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6600000.bin <regeneration-output>/chunks/m8/certificates/cert_6600000.bin <regeneration-output>/chunks/m8/certificates/fail_6600000.bin
+  completed in 4.96s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6700000.bin <regeneration-output>/chunks/m8/certificates/cert_6700000.bin <regeneration-output>/chunks/m8/certificates/fail_6700000.bin
+  completed in 2.54s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6800000.bin <regeneration-output>/chunks/m8/certificates/cert_6800000.bin <regeneration-output>/chunks/m8/certificates/fail_6800000.bin
+  completed in 3.31s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_6900000.bin <regeneration-output>/chunks/m8/certificates/cert_6900000.bin <regeneration-output>/chunks/m8/certificates/fail_6900000.bin
+  completed in 3.91s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7000000.bin <regeneration-output>/chunks/m8/certificates/cert_7000000.bin <regeneration-output>/chunks/m8/certificates/fail_7000000.bin
+  completed in 4.78s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7100000.bin <regeneration-output>/chunks/m8/certificates/cert_7100000.bin <regeneration-output>/chunks/m8/certificates/fail_7100000.bin
+  completed in 2.05s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7200000.bin <regeneration-output>/chunks/m8/certificates/cert_7200000.bin <regeneration-output>/chunks/m8/certificates/fail_7200000.bin
+  completed in 4.51s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7300000.bin <regeneration-output>/chunks/m8/certificates/cert_7300000.bin <regeneration-output>/chunks/m8/certificates/fail_7300000.bin
+  completed in 4.42s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7400000.bin <regeneration-output>/chunks/m8/certificates/cert_7400000.bin <regeneration-output>/chunks/m8/certificates/fail_7400000.bin
+  completed in 5.54s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7500000.bin <regeneration-output>/chunks/m8/certificates/cert_7500000.bin <regeneration-output>/chunks/m8/certificates/fail_7500000.bin
+  completed in 4.63s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7600000.bin <regeneration-output>/chunks/m8/certificates/cert_7600000.bin <regeneration-output>/chunks/m8/certificates/fail_7600000.bin
+  completed in 4.36s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7700000.bin <regeneration-output>/chunks/m8/certificates/cert_7700000.bin <regeneration-output>/chunks/m8/certificates/fail_7700000.bin
+  completed in 4.96s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7800000.bin <regeneration-output>/chunks/m8/certificates/cert_7800000.bin <regeneration-output>/chunks/m8/certificates/fail_7800000.bin
+  completed in 5.45s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_7900000.bin <regeneration-output>/chunks/m8/certificates/cert_7900000.bin <regeneration-output>/chunks/m8/certificates/fail_7900000.bin
+  completed in 4.36s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8000000.bin <regeneration-output>/chunks/m8/certificates/cert_8000000.bin <regeneration-output>/chunks/m8/certificates/fail_8000000.bin
+  completed in 4.27s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8100000.bin <regeneration-output>/chunks/m8/certificates/cert_8100000.bin <regeneration-output>/chunks/m8/certificates/fail_8100000.bin
+  completed in 3.09s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8200000.bin <regeneration-output>/chunks/m8/certificates/cert_8200000.bin <regeneration-output>/chunks/m8/certificates/fail_8200000.bin
+  completed in 0.44s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8300000.bin <regeneration-output>/chunks/m8/certificates/cert_8300000.bin <regeneration-output>/chunks/m8/certificates/fail_8300000.bin
+  completed in 2.91s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8400000.bin <regeneration-output>/chunks/m8/certificates/cert_8400000.bin <regeneration-output>/chunks/m8/certificates/fail_8400000.bin
+  completed in 0.49s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8500000.bin <regeneration-output>/chunks/m8/certificates/cert_8500000.bin <regeneration-output>/chunks/m8/certificates/fail_8500000.bin
+  completed in 1.49s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8600000.bin <regeneration-output>/chunks/m8/certificates/cert_8600000.bin <regeneration-output>/chunks/m8/certificates/fail_8600000.bin
+  completed in 0.76s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8700000.bin <regeneration-output>/chunks/m8/certificates/cert_8700000.bin <regeneration-output>/chunks/m8/certificates/fail_8700000.bin
+  completed in 0.84s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8800000.bin <regeneration-output>/chunks/m8/certificates/cert_8800000.bin <regeneration-output>/chunks/m8/certificates/fail_8800000.bin
+  completed in 0.80s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_8900000.bin <regeneration-output>/chunks/m8/certificates/cert_8900000.bin <regeneration-output>/chunks/m8/certificates/fail_8900000.bin
+  completed in 3.85s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_9000000.bin <regeneration-output>/chunks/m8/certificates/cert_9000000.bin <regeneration-output>/chunks/m8/certificates/fail_9000000.bin
+  completed in 0.36s
++ <regeneration-output>/bin/n8_propose_m8 <regeneration-output>/chunks/m8/scan/chunk_9100000.bin <regeneration-output>/chunks/m8/certificates/cert_9100000.bin <regeneration-output>/chunks/m8/certificates/fail_9100000.bin
+  completed in 0.00s
+  completed in 0.34s
+  completed in 0.93s
+  completed in 0.63s
+  completed in 0.99s
++ python3 <artifact-root>/src/n8/merge_certificates.py <regeneration-output>/summaries/m8_scan_summary.json <regeneration-output>/chunks/m8/certificates <regeneration-output>/data/m8/cps8_all.bin <regeneration-output>/data/m8/cps8_fail.bin <regeneration-output>/summaries/m8_certificate_summary.json
+  completed in 1.37s
++ <regeneration-output>/bin/n8_record_check <regeneration-output>/data/m8/n8m8_hard.bin <regeneration-output>/data/m8/cps8_all.bin <regeneration-output>/data/m8/cps8_fail.bin
+  completed in 0.13s
+NOTE: cps8_all.bin differs from reference hash (527d8237a2e4aaa79a5767fc5b6cfed8e9094f11e62f413e49a023dff683021b); exact replay, not proposal identity, decides validity
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0000000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0100000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0200000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0300000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0400000.bin
+  completed in 1.05s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0500000.bin
+  completed in 1.39s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0600000.bin
+  completed in 1.70s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0700000.bin
+  completed in 2.07s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0800000.bin
+  completed in 2.20s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_0900000.bin
+  completed in 2.92s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1000000.bin
+  completed in 4.17s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1100000.bin
+  completed in 5.03s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1200000.bin
+  completed in 5.36s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1300000.bin
+  completed in 6.07s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1400000.bin
+  completed in 2.92s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1500000.bin
+  completed in 4.47s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1600000.bin
+  completed in 7.72s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1700000.bin
+  completed in 8.90s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1800000.bin
+  completed in 5.77s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_1900000.bin
+  completed in 8.04s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2000000.bin
+  completed in 6.87s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2100000.bin
+  completed in 7.45s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2200000.bin
+  completed in 6.07s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2300000.bin
+  completed in 5.93s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2400000.bin
+  completed in 6.30s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2500000.bin
+  completed in 8.13s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2600000.bin
+  completed in 8.92s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2700000.bin
+  completed in 4.45s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2800000.bin
+  completed in 4.88s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_2900000.bin
+  completed in 10.60s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3000000.bin
+  completed in 6.17s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3100000.bin
+  completed in 8.68s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3200000.bin
+  completed in 8.78s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3300000.bin
+  completed in 10.43s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3400000.bin
+  completed in 10.84s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3500000.bin
+  completed in 11.40s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3600000.bin
+  completed in 5.19s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3700000.bin
+  completed in 7.59s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3800000.bin
+  completed in 7.23s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_3900000.bin
+  completed in 6.80s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4000000.bin
+  completed in 8.13s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4100000.bin
+  completed in 8.02s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4200000.bin
+  completed in 10.39s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4300000.bin
+  completed in 7.64s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4400000.bin
+  completed in 8.97s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4500000.bin
+  completed in 8.18s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4600000.bin
+  completed in 6.26s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4700000.bin
+  completed in 9.93s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4800000.bin
+  completed in 10.87s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_4900000.bin
+  completed in 8.01s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5000000.bin
+  completed in 9.91s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5100000.bin
+  completed in 2.33s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5200000.bin
+  completed in 9.43s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5300000.bin
+  completed in 7.97s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5400000.bin
+  completed in 8.25s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5500000.bin
+  completed in 10.39s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5600000.bin
+  completed in 10.71s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5700000.bin
+  completed in 8.36s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5800000.bin
+  completed in 13.10s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_5900000.bin
+  completed in 8.81s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6000000.bin
+  completed in 6.69s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6100000.bin
+  completed in 11.28s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6200000.bin
+  completed in 1.45s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6300000.bin
+  completed in 10.61s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6400000.bin
+  completed in 9.30s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6500000.bin
+  completed in 8.88s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6600000.bin
+  completed in 5.47s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6700000.bin
+  completed in 11.57s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6800000.bin
+  completed in 7.40s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_6900000.bin
+  completed in 9.37s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7000000.bin
+  completed in 11.83s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7100000.bin
+  completed in 5.25s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7200000.bin
+  completed in 10.19s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7300000.bin
+  completed in 11.93s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7400000.bin
+  completed in 9.94s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7500000.bin
+  completed in 14.23s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7600000.bin
+  completed in 8.59s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7700000.bin
+  completed in 10.63s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7800000.bin
+  completed in 11.70s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_7900000.bin
+  completed in 8.15s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8000000.bin
+  completed in 8.23s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8100000.bin
+  completed in 6.60s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8200000.bin
+  completed in 0.76s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8300000.bin
+  completed in 6.87s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8400000.bin
+  completed in 0.86s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8500000.bin
+  completed in 1.43s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8600000.bin
+  completed in 2.99s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8700000.bin
+  completed in 1.43s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8800000.bin
+  completed in 1.58s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_8900000.bin
+  completed in 8.86s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_9000000.bin
+  completed in 0.60s
++ <regeneration-output>/bin/n8_exact_check_m8_ll <regeneration-output>/chunks/m8/certificates/cert_9100000.bin
+  completed in 0.00s
+  completed in 0.43s
+  completed in 1.58s
+  completed in 0.90s
+  completed in 1.72s
++ python3 <artifact-root>/src/n8/aggregate_checker_logs.py <regeneration-output>/chunks/m8/checks 'check_ll_*.out' <regeneration-output>/summaries/m8_exact_ll_summary.json
+  completed in 0.54s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0000000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0100000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0200000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0300000.bin
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0400000.bin
+  completed in 5.24s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0500000.bin
+  completed in 6.99s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0600000.bin
+  completed in 10.37s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0700000.bin
+  completed in 12.52s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0800000.bin
+  completed in 14.09s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_0900000.bin
+  completed in 18.99s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1000000.bin
+  completed in 26.29s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1100000.bin
+  completed in 27.26s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1200000.bin
+  completed in 25.42s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1300000.bin
+  completed in 12.55s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1400000.bin
+  completed in 31.04s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1500000.bin
+  completed in 21.64s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1600000.bin
+  completed in 38.14s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1700000.bin
+  completed in 40.04s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1800000.bin
+  completed in 31.77s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_1900000.bin
+  completed in 46.23s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2000000.bin
+  completed in 37.69s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2100000.bin
+  completed in 34.04s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2200000.bin
+  completed in 42.10s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2300000.bin
+  completed in 35.32s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2400000.bin
+  completed in 48.58s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2500000.bin
+  completed in 36.51s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2600000.bin
+  completed in 45.06s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2700000.bin
+  completed in 17.69s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2800000.bin
+  completed in 19.71s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_2900000.bin
+  completed in 53.06s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3000000.bin
+  completed in 23.19s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3100000.bin
+  completed in 38.56s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3200000.bin
+  completed in 41.36s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3300000.bin
+  completed in 48.29s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3400000.bin
+  completed in 49.86s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3500000.bin
+  completed in 54.90s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3600000.bin
+  completed in 28.25s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3700000.bin
+  completed in 36.81s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3800000.bin
+  completed in 32.84s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_3900000.bin
+  completed in 38.41s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4000000.bin
+  completed in 41.28s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4100000.bin
+  completed in 44.00s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4200000.bin
+  completed in 41.92s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4300000.bin
+  completed in 56.50s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4400000.bin
+  completed in 47.12s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4500000.bin
+  completed in 44.08s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4600000.bin
+  completed in 32.13s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4700000.bin
+  completed in 49.60s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4800000.bin
+  completed in 49.18s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_4900000.bin
+  completed in 57.39s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5000000.bin
+  completed in 40.02s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5100000.bin
+  completed in 10.31s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5200000.bin
+  completed in 43.65s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5300000.bin
+  completed in 34.44s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5400000.bin
+  completed in 41.26s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5500000.bin
+  completed in 49.77s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5600000.bin
+  completed in 46.52s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5700000.bin
+  completed in 39.79s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5800000.bin
+  completed in 68.71s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_5900000.bin
+  completed in 46.69s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6000000.bin
+  completed in 36.78s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6100000.bin
+  completed in 64.05s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6200000.bin
+  completed in 56.92s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6300000.bin
+  completed in 7.08s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6400000.bin
+  completed in 50.10s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6500000.bin
+  completed in 49.23s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6600000.bin
+  completed in 29.13s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6700000.bin
+  completed in 61.64s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6800000.bin
+  completed in 47.93s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_6900000.bin
+  completed in 36.90s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7000000.bin
+  completed in 55.94s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7100000.bin
+  completed in 50.75s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7200000.bin
+  completed in 21.18s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7300000.bin
+  completed in 45.38s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7400000.bin
+  completed in 58.30s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7500000.bin
+  completed in 38.57s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7600000.bin
+  completed in 44.87s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7700000.bin
+  completed in 51.70s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7800000.bin
+  completed in 53.57s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_7900000.bin
+  completed in 41.15s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8000000.bin
+  completed in 33.31s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8100000.bin
+  completed in 3.56s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8200000.bin
+  completed in 41.83s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8300000.bin
+  completed in 4.61s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8400000.bin
+  completed in 34.80s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8500000.bin
+  completed in 15.71s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8600000.bin
+  completed in 6.47s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8700000.bin
+  completed in 6.35s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8800000.bin
+  completed in 2.70s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_8900000.bin
+  completed in 7.06s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_9000000.bin
+  completed in 45.42s
++ <regeneration-output>/bin/n8_exact_check_m8_gmp <regeneration-output>/chunks/m8/certificates/cert_9100000.bin
+  completed in 0.01s
+  completed in 8.88s
+  completed in 2.59s
+  completed in 9.25s
+  completed in 5.60s
++ python3 <artifact-root>/src/n8/aggregate_checker_logs.py <regeneration-output>/chunks/m8/checks 'check_gmp_*.out' <regeneration-output>/summaries/m8_exact_gmp_summary.json
+  completed in 0.55s
+PASS m8-only full kernel audit, floor scan, record coverage, and dual exact replay
+summary=<regeneration-output>/summaries/m8_only_completion.json
+elapsed_seconds=4826.58
+	Command being timed: "env CXX=<cxx-wrapper> JOBS=5 CHUNK_SIZE=100000 python3 <regeneration-driver>"
+	User time (seconds): 18533.90
+	System time (seconds): 14.85
+	Percent of CPU this job got: 384%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:20:27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 592508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3549909
+	Voluntary context switches: 3423
+	Involuntary context switches: 659508
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 389280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
